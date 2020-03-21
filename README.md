@@ -1,4 +1,6 @@
 # Hw6_Redux-student_v2
+Demo App on Heroku </br>
+https://coe-redux-hw-homwork.herokuapp.com/
 # run Backend
 npm i </br>
 node index.js
