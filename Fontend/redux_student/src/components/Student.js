@@ -2,6 +2,8 @@ import React from 'react'
 import ListStudent from './ListStudent'
 import {useSelector,useDispatch} from 'react-redux'
 import axios from 'axios'
+import '../App.css';
+
 const Student=()=>{
     const dispatch = useDispatch();
     const form = useSelector(state => state.form)
@@ -19,7 +21,7 @@ const Student=()=>{
     }
     return(
         <div>
-            component student
+            List students
             <ListStudent />
             {form.name} {form.surname} :{form.id} {form.Major} {form.GPA}
            
@@ -49,7 +51,9 @@ const Student=()=>{
              placeholder="Enter GPA" 
              onChange={(e) => dispatch({ type: 'CHANGE_GPA', GPA: e.target.value })}
             />
-            <button onClick={addStudent}>ADD</button>
+            <span className="App2">
+            <button className="btn1" onClick={addStudent}>ADD</button>
+            </span>
         </div>
     )
 

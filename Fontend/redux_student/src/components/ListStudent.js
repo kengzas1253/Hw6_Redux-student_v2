@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react'
 import {useSelector,useDispatch} from 'react-redux'
 import axios from 'axios'
+import '../App.css';
 const ListStudent=(props)=>{
 
 
@@ -27,7 +28,7 @@ const ListStudent=(props)=>{
         await axios.put(`http://localhost/api/students/${students_no}`,form)
          dispatch(
              {type:'UPDATE_STUDENT',
-             no: props.no,
+             no: students_no,
              student:{...form, no:  students_no}
          })
          getStudents()
@@ -40,11 +41,15 @@ const ListStudent=(props)=>{
             return students.map((student,index)=>{
                 return(
                     <li key={index}>
-                            no: {student.no}, 
+                            no: {student.no} :
                             {student.name}  {student.surname  } : 
                             {student.id} Major: {student.Major} GPA:{student.GPA}
-                            <button onClick={ ()=>deleteStudent(student.no)}>DEL</button>
-                            <button onClick={ ()=>updateStudent(student.no)}>Update</button>
+                            <span className="App3">
+                            <button className="btn2" onClick={ ()=>deleteStudent(student.no)}>Delete</button>
+                            </span>
+                            <span  className="App3">
+                            <button className="btn3" onClick={ ()=>updateStudent(student.no)}>Update</button>
+                            </span>
                     </li> 
                 )
             })

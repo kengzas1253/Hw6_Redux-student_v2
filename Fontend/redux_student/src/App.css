@@ -1,6 +1,17 @@
 .App {
-  text-align: center;
+  /* text-align: center; */
+  padding-left: 30px;
 }
+.App2 {
+  /* text-align: center; */
+  margin-left: 10px;
+}
+.App3 {
+  /* text-align: center; */
+  margin-left: 5px;
+}
+
+
 
 .App-logo {
   height: 40vmin;
@@ -35,4 +46,47 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.btn1 {
+  background-color: rgb(7, 118, 221);
+  padding: 4px 8px;
+  border: none;
+  border-radius: 2px;
+  color: white;
+  cursor: pointer;
+  transition: background-color .1s ease-in;
+}
+
+.btn1:hover {
+  background-color: rgb(0, 255, 255);
+  color: black;
+}
+.btn2 {
+  background-color: rgb(243, 8, 8);
+  padding: 4px 8px;
+  border: none;
+  border-radius: 2px;
+  color: white;
+  cursor: pointer;
+  transition: background-color .1s ease-in;
+}
+
+.btn2:hover {
+  background-color: rgb(255, 187, 0);
+  color: black;
+}
+.btn3 {
+  background-color: rgb(6, 122, 50);
+  padding: 4px 8px;
+  border: none;
+  border-radius: 2px;
+  color: white;
+  cursor: pointer;
+  transition: background-color .1s ease-in;
+}
+
+.btn3:hover {
+  background-color: rgb(12, 247, 129);
+  color: black;
 }

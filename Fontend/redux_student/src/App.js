@@ -6,7 +6,7 @@ import Student from './components/Student'
 function App() {
   return (
     <div className="App">
-     <h2>Students</h2>
+     <h2 > React-Redux students</h2>
      <Student/>
     </div>
   );
