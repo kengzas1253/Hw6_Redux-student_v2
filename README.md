@@ -2,11 +2,11 @@
 Naratip Thongtaluang 5735512153 section 01 </br>
 # Demo App on Heroku </br>
 https://coe-redux-hw-homwork.herokuapp.com/
+api on Heroku </br>
+https://coe-student-api.herokuapp.com/
 # run Backend
 npm i </br>
 node index.js
 # run Fontend
 npm i
 npm start
-# api on Heroku
-https://coe-student-api.herokuapp.com/
